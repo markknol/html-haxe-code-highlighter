@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="highlighter.min.css"/>
+</head>
+<body>
+<pre><code class="prettyprint haxe">
+/**
+   Syntax highlight example.
+   
+   @return Very nice results
+**/
+public static function syntaxHighlightHaxe(code:String):String {
+	var html = code;
+	var kwds = ["abstract", "trace", "break", "case", "cast", "class", "continue", "default", "do", "dynamic", "else", "elseif", "enum", "extends", "extern", "for", "function", "if", "implements", "import", "in", "inline", "interface", "macro", "new", "override", "package", "private", "public", "return", "static", "switch", "throw", "try", "typedef", "untyped", "using", "var", "while", "as"];
+	var kwds = new EReg("\\b(" + kwds.join("|") + ")\\b", "g");
+
+	var vals = ["null", "true", "false", "this"];
+	var vals = new EReg("\\b(" + vals.join("|") + ")\\b", "g");
+
+	var types = ~/\b([A-Z][a-zA-Z0-9_]*)\b/g;
+
+	html = html.replace("\t", "  "); // indent with two spaces
+	html = kwds.replace(html, "<span class=kwd>$1</span>");
+	html = vals.replace(html, "<span class=val>$1</span>");
+	html = types.replace(html, "<span class=type>$1</span>");
+	
+	html = ~/(("|')[^"']*\2)/g.replace(html, "<span class=str>$1</span>");
+	html = ~/(\/\/.+?)(\n|$)/g.replace(html, "<span class=cmt>$1</span>$2");
+	html = ~/(\/\*\*?(.|\n)+?\*?\*\/)/g.replace(html, "<span class=cmt>$1</span>");
+	
+	return html;
+}
+</code></pre>
+<script src="highlighter.js"></script>
+</body>
+</html>

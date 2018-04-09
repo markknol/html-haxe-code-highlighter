@@ -1,0 +1,6 @@
+-main highlighter.Highlighter
+-cp src/
+-js bin/highlighter.js
+-dce full
+-D analyzer
+-D analyzer-optimize

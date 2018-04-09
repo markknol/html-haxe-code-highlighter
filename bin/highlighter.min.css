@@ -1,0 +1,9 @@
+html pre,html pre code.prettyprint{font-family:consolas,monospace;white-space:pre;overflow-x:auto;font-size:14px;}
+code.prettyprint{display:block;color:#333;margin:15px 0;padding:0.5em;}
+code.prettyprint .type{color:#0086b3;}
+code.prettyprint .kwd{color:#00a;}
+code.prettyprint .val{color:#44a;}
+code.prettyprint .str,code.prettyprint .str .kwd,code.prettyprint .str .val,code.prettyprint .str .type{color:#a00;}
+code.prettyprint .cmt{color:#998;font-style:italic;}
+code.prettyprint .ereg,code.prettyprint .ereg .type{color:#f01;}
+code.prettyprint .cmt .kwd,code.prettyprint .cmt .str,code.prettyprint .cmt .val,code.prettyprint .cmt .type{color:#998;}

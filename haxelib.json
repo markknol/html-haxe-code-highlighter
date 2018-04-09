@@ -1,0 +1,13 @@
+{
+  "name": "html-haxe-code-highlighter",
+  "url" : "https://github.com/markknol/html-haxe-code-highlighter/",
+  "license": "MIT",
+  "tags": ["js","highlighting","highlighter", "syntax", "html", "code"],
+  "description": "Basic runtime Haxe code highlighting for HTML",
+  "version": "0.1.0",
+  "releasenote": "Initial sources",
+  "contributors": ["markknol"],
+  "dependencies": {
+
+  } 
+}
