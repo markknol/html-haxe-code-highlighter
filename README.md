@@ -1,5 +1,6 @@
 # Simple Haxe Code Highlighter for HTML
-[![Build Status](https://travis-ci.org/markknol/hxnew.svg?branch=master)](https://travis-ci.org/markknol/hxnew)
+[![Build Status](https://travis-ci.org/markknol/html-haxe-code-highlighter.svg?branch=master)](https://travis-ci.org/markknol/html-haxe-code-highlighter)
+[![Haxelib Version](https://img.shields.io/github/tag/markknol/html-haxe-code-highlighter.svg?label=haxelib)](http://lib.haxe.org/p/p/html-haxe-code-highlighter)
 
 Basic runtime Haxe code highlighting. Formerly used on haxe.org website. 
 
