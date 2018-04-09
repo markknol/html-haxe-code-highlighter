@@ -1,4 +1,5 @@
 # Simple Haxe Code Highlighter for HTML
+[![Build Status](https://travis-ci.org/markknol/hxnew.svg?branch=master)](https://travis-ci.org/markknol/hxnew)
 
 Basic runtime Haxe code highlighting. Formerly used on haxe.org website. 
 
