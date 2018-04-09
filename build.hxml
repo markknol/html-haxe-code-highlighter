@@ -1,6 +1,8 @@
 -main highlighter.Highlighter
 -cp src/
 -js bin/highlighter.js
+-D highlighter_standalone
+
 -dce full
 -D analyzer
 -D analyzer-optimize

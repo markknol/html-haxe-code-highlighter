@@ -6,9 +6,11 @@ using StringTools;
  * @author Mark Knol
  */
 class Highlighter {
-	public static function main() highlight();
-	
 #if js
+	#if highlighter_standalone
+	public static function main() highlight();
+	#end
+	
 	/**
 	   Adds highlighting to all `<code class="prettyprint haxe">` and `<code class="prettyprint hxml">` tags in the given element.
 	   @param	element Element to search `<code>` tags in. If `null`, then document body element is used.
