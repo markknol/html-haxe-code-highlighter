@@ -4,9 +4,10 @@
   "license": "MIT",
   "tags": ["js","highlighting","highlighter", "syntax", "html", "code"],
   "description": "Basic runtime Haxe code highlighting for HTML",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "releasenote": "Initial sources",
   "contributors": ["markknol"],
+  "classPath": "src",
   "dependencies": {
 
   } 
