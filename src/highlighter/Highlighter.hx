@@ -48,7 +48,7 @@ class Highlighter {
 	   
 	   @return HTML text of highlighted code.
 	**/
-   public static function syntaxHighlightHaxe(code:String):String {
+	public static function syntaxHighlightHaxe(code:String):String {
 		var html = code;
 		var kwds = ["abstract", "trace", "break", "case", "cast", "class", "continue", "default", "do", "dynamic", "else", "elseif", "enum", "extends", "extern", "for", "function", "if", "implements", "import", "in", "inline", "interface", "macro", "new", "override", "package", "private", "public", "return", "static", "switch", "throw", "try", "typedef", "untyped", "using", "var", "while", "as"];
 		var kwds = new EReg("\\b(" + kwds.join("|") + ")\\b", "g");
@@ -84,7 +84,7 @@ class Highlighter {
 	   
 	   @return HTML text of highlighted code.
 	**/
-   public static function syntaxHighlightHXML(code:String):String {
+	public static function syntaxHighlightHXML(code:String):String {
 		var html = code;
 		html = ~/\b(haxe)\b/g.replace(html, "<span class=kwd>$1</span>");
 		html = ~/(("|')[^"']*\2)/g.replace(html, "<span class=str>$1</span>");
